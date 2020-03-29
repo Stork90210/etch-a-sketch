@@ -1,0 +1,7 @@
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    margin: 50px;
+}

@@ -1,7 +1,7 @@
-let width = 800;
-let height = width;
-let numberSquares = ""
-let counter = 0;
+const width = 800;
+const height = width;
+const numberSquares = 0
+const counter = 0;
 
 
 container = document.createElement(`div`)   // Creates main div
@@ -38,16 +38,18 @@ function setDivListener() {
 }
 
 function colorSubDiv(e) {
-    counter++;
-    if (counter%10 == 0) {
-        this.style.background = `black`;
-    } else {
-        console.log(e)
-        r = Math.round(Math.random() * 255);
-        g = Math.round(Math.random() * 255);
-        b = Math.round(Math.random() * 255);
-        this.style.background = `rgb(${r},${g},${b})`;
-    }
+    //counter++;
+    //if (counter%10 == 0) {
+    //    this.style.background = `black`;
+    //} else {
+    //    console.log(e)
+    //    r = Math.round(Math.random() * 255);
+    //    g = Math.round(Math.random() * 255);
+    //    b = Math.round(Math.random() * 255);
+    //    this.style.background = `rgb(${r},${g},${b})`;
+    //}
+    this.style.backgroundColor = `rgb(0,0,0)`
+    this.style.opacity = Number(this.style.opacity) + 0.1;     
 }
 
 function clearGrid() {
@@ -56,11 +58,8 @@ function clearGrid() {
 }
 
 function promptUser() {
-    return prompt(`How many squares wide will your next Etch-A-Sketch be?`, `100`)
+    return prompt(`How many squares wide will your next Etch-A-Sketch be?`, `10`)
 }
 
 generateDivs();
-
 button.addEventListener(`click`, clearGrid);
-
-

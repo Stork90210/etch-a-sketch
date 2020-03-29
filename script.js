@@ -1,7 +1,7 @@
 const width = 800;
 const height = width;
-const numberSquares = 0
-const counter = 0;
+let numberSquares = 0
+let counter = 0;
 
 
 container = document.createElement(`div`)   // Creates main div
